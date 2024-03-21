@@ -1,4 +1,4 @@
-ssh-keygen -t rsa -C "your_email@youremail.com" //双引号里面是你的邮箱。填你常用的就行。还有enter代表执行。
+ssh-keygen -t rsa -C "your_email@youremail.com" #双引号里面是你的邮箱。填你常用的就行。还有enter代表执行。
 git init
 git config --global user.name "your name"
 git config --global user.email "your_email@youremail.com"
@@ -8,4 +8,23 @@ git add read.txt
 git commit -m "写commit的原因"
 git push -u origin master
 
-git merge pa0//合并分支
+git merge pa0 #合并分支
+git checkout -b pa0 #创建并切换到新的分支
+
+git branch #查看当前分支
+
+git switch -c pa0 #创建并切换到新的分支
+git switch mater #直接切换到已有分支
+
+git branch -d pa0 #删除分支，需merge合并后删除
+git branch D test #强制删除分支
+
+git log --graph #查看分支合并情况
+
+git stash #储藏当前工作
+git stash list #查看现场
+git stash apply #恢复
+git stash drop #删除stash内容
+git stash pop #恢复的同时删除
+git cherry-pick <commit> #把bug的修改复制到当前分支，避免重复工作
+
