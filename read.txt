@@ -8,3 +8,4 @@ git add read.txt
 git commit -m "写commit的原因"
 git push -u origin master
 
+git merge pa0//合并分支
