@@ -7,6 +7,7 @@ git config --list #显示
 git remote add origin git@github.com:你的github用户名/仓库名.git
 touch read.txt
 git add read.txt
+git add . #当前工作全部加入暂存区
 git commit -m "写commit的原因"
 git push -u origin master
 
@@ -23,7 +24,7 @@ git branch D test #强制删除分支
 
 git log --graph #查看分支合并情况
 
-git stash #储藏当前工作
+git stash #储存当前工作
 git stash list #查看现场
 git stash apply #恢复
 git stash drop #删除stash内容
